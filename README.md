@@ -28,7 +28,7 @@ To run this project, you need a modern web browser.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CodeAlpha_Music_Player.git
+   git clone https://github.com/technicalkundi/CodeAlpha_Music_Player.git
 
  
 
