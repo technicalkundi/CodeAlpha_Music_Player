@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="sidebar">
+            <h1>Music Player</h1>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for a song...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul id="playlist">
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="now-playing">
+                <img id="album-art" src="https://via.placeholder.com/300" alt="Album Art">
+                <h2 id="song-title">No song selected</h2>
+                <p id="song-artist">Unknown artist</p>
+            </div>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-step-backward"></i></button>
+                <button id="playPause"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-step-forward"></i></button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" min="0" max="100" value="0">
+                <span id="duration">0:00</span>
+            </div>
+            <div class="volume-container">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+    <audio id="audio"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
